@@ -183,14 +183,99 @@ True
 sum_list(floats) returns 6.470000000000001 which is a <class 'float'>
 ```
 
+## 6. Complex types - mixed list: [6-sum_mixed_list.py](6-sum_mixed_list.py)
+Write a type-annotated function `sum_mixed_list` which takes a list `mxd_lst` of integers and floats and returns their sum as a float.
+```groovy
+bob@dylan:~$ cat 6-main.py
+#!/usr/bin/env python3
 
+sum_mixed_list = __import__('6-sum_mixed_list').sum_mixed_list
 
+print(sum_mixed_list.__annotations__)
+mixed = [5, 4, 3.14, 666, 0.99]
+ans = sum_mixed_list(mixed)
+print(ans == sum(mixed))
+print("sum_mixed_list(mixed) returns {} which is a {}".format(ans, type(ans)))
 
+bob@dylan:~$ ./6-main.py
+{'mxd_lst': typing.List[typing.Union[int, float]], 'return': <class 'float'>}
+True
+sum_mixed_list(mixed) returns 679.13 which is a <class 'float'>
+```
 
+## 7. Complex types - string and int/float to tuple: [7-to_kv.py](7-to_kv.py)
+Write a type-annotated function `to_kv` that takes a string `k` and an int OR float `v` as arguments and returns a tuple. The first element of the tuple is the string `k`. The second element is the square of the int/float `v` and should be annotated as a float.
+```groovy
+bob@dylan:~$ cat 7-main.py
+#!/usr/bin/env python3
 
+to_kv = __import__('7-to_kv').to_kv
 
+print(to_kv.__annotations__)
+print(to_kv("eggs", 3))
+print(to_kv("school", 0.02))
 
+bob@dylan:~$ ./7-main.py
+{'k': <class 'str'>, 'v': typing.Union[int, float], 'return': typing.Tuple[str, float]}
+('eggs', 9)
+('school', 0.0004)
+```
 
+## 8. Complex types - functions: [8-make_multiplier.py](8-make_multiplier.py)
+Write a type-annotated function `make_multiplier` that takes a float `multiplier` as argument and returns a function that multiplies a float by `multiplier`.
+```groovy
+bob@dylan:~$ cat 8-main.py
+#!/usr/bin/env python3
+
+make_multiplier = __import__('8-make_multiplier').make_multiplier
+print(make_multiplier.__annotations__)
+fun = make_multiplier(2.22)
+print("{}".format(fun(2.22)))
+
+bob@dylan:~$ ./8-main.py
+{'multiplier': <class 'float'>, 'return': typing.Callable[[float], float]}
+4.928400000000001
+```
+
+## 9. Let's duck type an iterable object: [9-element_length.py](9-element_length.py)
+Annotate the below function’s parameters and return values with the appropriate types
+```groovy
+def element_length(lst):
+    return [(i, len(i)) for i in lst]
+```
+```groovy
+bob@dylan:~$ cat 9-main.py 
+#!/usr/bin/env python3
+
+element_length =  __import__('9-element_length').element_length
+
+print(element_length.__annotations__)
+
+bob@dylan:~$ ./9-main.py 
+{'lst': typing.Iterable[typing.Sequence], 'return': typing.List[typing.Tuple[typing.Sequence, int]]}
+```
+
+## 10. Duck typing - first element of a sequence: [100-safe_first_element.py](100-safe_first_element.py)
+Augment the following code with the correct duck-typed annotations:
+```groovy
+# The types of the elements of the input are not know
+def safe_first_element(lst):
+    if lst:
+        return lst[0]
+    else:
+        return None
+```
+```groovy        
+bob@dylan:~$ cat 100-main.py 
+#!/usr/bin/env python3
+
+safe_first_element =  __import__('100-safe_first_element').safe_first_element
+
+print(safe_first_element.__annotations__)
+
+bob@dylan:~$ ./100-main.py 
+{'lst': typing.Sequence[typing.Any], 'return': typing.Union[typing.Any, NoneType]}
+```
 
 
 
