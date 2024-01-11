@@ -277,96 +277,63 @@ bob@dylan:~$ ./100-main.py
 {'lst': typing.Sequence[typing.Any], 'return': typing.Union[typing.Any, NoneType]}
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## 11. More involved type annotations: [101-safely_get_value.py](101-safely_get_value.py)
+Given the parameters and the return values, add type annotations to the function
+
+Hint: look into TypeVar
+```groovy
+def safely_get_value(dct, key, default = None):
+    if key in dct:
+        return dct[key]
+    else:
+        return default
+```
+```groovy
+bob@dylan:~$ cat 101-main.py 
+#!/usr/bin/env python3
+
+safely_get_value = __import__('101-safely_get_value').safely_get_value
+annotations = safely_get_value.__annotations__
+
+print("Here's what the mappings should look like")
+for k, v in annotations.items():
+    print( ("{}: {}".format(k, v)))
+
+bob@dylan:~$ ./101-main.py 
+Here's what the mappings should look like
+dct: typing.Mapping
+key: typing.Any
+default: typing.Union[~T, NoneType]
+return: typing.Union[typing.Any, ~T]
+```
+
+## 12. Type Checking: [102-type_checking.py](102-type_checking.py)
+Use `mypy` to validate the following piece of code and apply any necessary changes.
+```groovy
+def zoom_array(lst: Tuple, factor: int = 2) -> Tuple:
+    zoomed_in: Tuple = [
+        item for item in lst
+        for i in range(factor)
+    ]
+    return zoomed_in
+
+
+array = [12, 72, 91]
+
+zoom_2x = zoom_array(array)
+
+zoom_3x = zoom_array(array, 3.0)
+```
+```groovy
+bob@dylan:~$ mypy 102-type_checking.py
+Success: no issues found in 1 source file
+bob@dylan:~$ cat 102-main.py 
+#!/usr/bin/env python3
+
+zoom_array =  __import__('102-type_checking').zoom_array
+
+print(zoom_array.__annotations__)
+
+bob@dylan:~$ ./102-main.py 
+{'lst': typing.Tuple, 'factor': <class 'int'>, 'return': typing.List}
+```
