@@ -142,7 +142,7 @@ bob@dylan:~$ ./4-main.py
 [0.2261658205652346, 1.1942770588220557, 1.8410422186086628, 2.1457353803430523, 4.002505454641153]
 ```
 
----
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br><br>
 
 # REFERENCE 📚
 ## 1. YOUTUBE VIDEOS 🎥
