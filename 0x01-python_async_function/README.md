@@ -147,6 +147,7 @@ bob@dylan:~$ ./4-main.py
 a. [YOU-TUBE VIDEO BY Tech With Tim](https://www.youtube.com/watch?v=t5Bo1Je9EmE) 📹
 
 b. [YOU-TUBE VIDEO BY Socratica](https://www.youtube.com/watch?v=K56nNuBEd0c) 📹
+---
 
 ## 2. HINT for Python Async project
 **only if you stuck, keep googling🙂**
