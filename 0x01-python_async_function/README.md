@@ -142,6 +142,8 @@ bob@dylan:~$ ./4-main.py
 [0.2261658205652346, 1.1942770588220557, 1.8410422186086628, 2.1457353803430523, 4.002505454641153]
 ```
 
+---
+
 # REFERENCE 📚
 ## 1. YOUTUBE VIDEOS 🎥
 a. [YOU-TUBE VIDEO BY Tech With Tim](https://www.youtube.com/watch?v=t5Bo1Je9EmE) 📹
