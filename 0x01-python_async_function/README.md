@@ -147,6 +147,7 @@ bob@dylan:~$ ./4-main.py
 a. [YOU-TUBE VIDEO BY Tech With Tim](https://www.youtube.com/watch?v=t5Bo1Je9EmE) 📹
 
 b. [YOU-TUBE VIDEO BY Socratica](https://www.youtube.com/watch?v=K56nNuBEd0c) 📹
+
 ---
 
 ## 2. HINT for Python Async project
@@ -173,6 +174,7 @@ b. [YOU-TUBE VIDEO BY Socratica](https://www.youtube.com/watch?v=K56nNuBEd0c) �
 * **asyncio.run()** is like saying "Start this task and wait for it to finish, then give me the result." It takes care of creating an event loop, running the given coroutine in the loop, and closing the loop when the coroutine is done.
 
 **Task3 & Task4 we gonna use same thing we did use before...**
+
 ---
 
 
