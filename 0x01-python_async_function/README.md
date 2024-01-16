@@ -175,6 +175,21 @@ b. [YOU-TUBE VIDEO BY Socratica](https://www.youtube.com/watch?v=K56nNuBEd0c) ðŸ
 
 **Task3 & Task4 we gonna use same thing we did use before...**
 
+### Reaction from Peers:
+> For task1 there's a way to do it without using sort ot sorted
+
+> They said dont use sort(), so sorted() is working fine, if you dont want to use sorted, maybe u can do bubble sort with 2 for loop or other sorting algorithm
+
+> No we can use something else like create list tasks and iter throw it using as_completed cuz as_completed return the earliest so it sort the result. My English not that good but see this method accept list and give you a sorted list of tasks
+
+![Screenshot from 2024-01-16 08-37-53](https://github.com/elyse502/alx-backend-python/assets/125453474/b38ffddc-288b-4b57-8616-398d3dc2f836)
+
+> I wasnt aware of it, that really smart, so instead of using asyncio.gather , asyncio.as_completed will give us sorted result
+
+> But yo have to run the tasks by your self as_completed will not run it for you
+
+**Continuity of the conversation** ðŸ‘‰ [LINK](https://discord.com/channels/1148581179084243054/1196519679565496320)
+
 ---
 
 
