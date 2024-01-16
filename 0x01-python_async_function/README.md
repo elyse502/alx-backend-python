@@ -184,9 +184,9 @@ b. [YOU-TUBE VIDEO BY Socratica](https://www.youtube.com/watch?v=K56nNuBEd0c) ðŸ
 
 ![Screenshot from 2024-01-16 08-37-53](https://github.com/elyse502/alx-backend-python/assets/125453474/b38ffddc-288b-4b57-8616-398d3dc2f836)
 
-> I wasnt aware of it, that really smart, so instead of using asyncio.gather , asyncio.as_completed will give us sorted result
+> I wasn't aware of it, that really smart, so instead of using asyncio.gather , asyncio.as_completed will give us sorted result
 
-> But yo have to run the tasks by your self as_completed will not run it for you
+> But you have to run the tasks by your self as_completed will not run it for you
 
 **Continuity of the conversation** ðŸ‘‰ [LINK](https://discord.com/channels/1148581179084243054/1196519679565496320)
 
