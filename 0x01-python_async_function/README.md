@@ -148,5 +148,30 @@ a. [YOU-TUBE VIDEO BY Tech With Tim](https://www.youtube.com/watch?v=t5Bo1Je9EmE
 
 b. [YOU-TUBE VIDEO BY Socratica](https://www.youtube.com/watch?v=K56nNuBEd0c) 📹
 
+## 2. HINT for Python Async project
+**only if you stuck, keep googling🙂**
+### Task0:
+* **random.uniform(a, b)** function returns a random floating point number N such that a <= N <= b for a <= b and b <= N <= a for b < a.
+* **asyncio.sleep()** is a function in Python's asyncio library that pauses the execution of the current coroutine for a specified amount of time. It's like a pause or sleep command for asynchronous code.
+
+
+### Task1 :
+* **asyncio.create_task()** is like saying "Start this task in the background, and give me an object that I can use to check on the task's status or get its result later."
+* **asyncio.gather()** is like saying "I have these tasks that can run at the same time. Start them all and give me all their results when they're done."
+* **asyncio.as_completed()** this can help avoid using sorted()
+* **sort() vs sorted()**:
+    * sort() and sorted() are both built-in functions in Python that can be used to sort a list.
+    * **Method vs Function**: sort() is a method that can only be used with lists. sorted() is a function that accepts any iterable.
+    * **In-place vs New List**: sort() sorts the list in-place, meaning that it modifies the original list and returns None. sorted() returns a new sorted list.
+
+
+### Task2:
+* time.time(): Returns the time in seconds since the epoch (start point). Used for real-world timing.
+* time.perf_counter(): Returns the highest-resolution timer for short durations. Includes sleep time. Used for performance testing.
+* time.process_time(): Returns the sum of system and user CPU time of the current process. Doesn't include sleep time. Used for process time measurement.
+* **asyncio.run()** is like saying "Start this task and wait for it to finish, then give me the result." It takes care of creating an event loop, running the given coroutine in the loop, and closing the loop when the coroutine is done.
+
+**Task3 & Task4 we gonna use same thing we did use before...**
+---
 
 
