@@ -143,7 +143,9 @@ bob@dylan:~$ ./4-main.py
 ```
 
 # REFERENCE 📚
-1. [YOU-TUBE VIDEO](https://www.youtube.com/watch?v=t5Bo1Je9EmE) 📹
+## 1. YOUTUBE VIDEOS 🎥
+a. [YOU-TUBE VIDEO](https://www.youtube.com/watch?v=t5Bo1Je9EmE) 📹
+b. [YOU-TUBE VIDEO BY Socratica](https://www.youtube.com/watch?v=K56nNuBEd0c) 📹
 
 
 
