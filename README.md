@@ -13,7 +13,7 @@ This repository consists of Backend Python projects done with [ALX Africa](https
 - [0x00](./0x00-python_variable_annotations) : Introduction to Advanced Python.
 
 - [0x01](./0x01-python_async_function) : `async` and await `syntax`.
-- [0x02](./0x02-ES6_classes) : How to: write an asynchronous generator, use async comprehensions, type-annotate generators.
+- [0x02](./0x02-python_async_comprehension) : How to: write an asynchronous generator, use async comprehensions, type-annotate generators.
 <!--
 - [0x03](./0x03-ES6_data_manipulation) : Map, filter and reduce.
 - [0x04](./0x04-TypeScript) : Types, Interfaces, Classes, Functions. -->
