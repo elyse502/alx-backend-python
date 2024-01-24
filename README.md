@@ -10,6 +10,11 @@ This repository consists of Backend Python projects done with [ALX Africa](https
 
 ---
 
+<div align="center">
+
+# TABLE OF CONTENT 📖
+</div>
+
 - [0x00](./0x00-python_variable_annotations) : Introduction to Advanced Python.
 
 - [0x01](./0x01-python_async_function) : `async` and await `syntax`.
