@@ -1,4 +1,5 @@
 # 0x00. Python - Variable Annotations
+
 # Concepts 📔
 _For this project, we expect you to look at this concept:_
 
