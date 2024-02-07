@@ -5,6 +5,10 @@
 
 > Python - Variable Annotations, Python - Async, Python - Async Comprehension
 
+<!--
+This repository contains files put together for exercises in Python Programming Language for specialization in Backend Development.
+-->
+
 ## About
 This repository consists of Backend Python projects done with [ALX Africa](https://www.alxafrica.com/) Full stack Software Engineering course in partnership with [Holberton School](https://www.holbertonschool.com/) by [Elysée NIYIBIZI](https://github.com/elyse502).
 
